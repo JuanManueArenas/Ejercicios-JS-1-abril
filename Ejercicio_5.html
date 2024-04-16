@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumarNumeros() {
+    
+    let numero1 = prompt("Ingrese el primer número:");
+
+  while (isNaN(numero1) || numero1 === "") {
+    numero1 = prompt("Error: Ingrese un número válido. Primer número:");
+  }
+
+  let numero2 = prompt("Ingrese el segundo número:");
+
+  while (isNaN(numero2) || numero2 === "") {
+    numero2 = prompt("Error: Ingrese un número válido. Segundo número:");
+  }
+
+  numero1 = parseFloat(numero1);
+  numero2 = parseFloat(numero2);
+
+  let suma = numero1 + numero2;
+  alert(`La suma de ${numero1} y ${numero2} es: ${suma}`);
+}
+
+sumarNumeros();
+
+    </script>
+</body>
+</html>
